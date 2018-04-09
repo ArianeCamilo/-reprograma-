@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta chartset="UTF-8">
+    <title>Formulário - Briefing</title>
+    <link rel="icon" href="img/bulb.png">
+</head>
+
+    <body>
+        <header>
+        <nav>
+            <img src="img/bulb.png" alt="Lâmpada que representa o logotipo da nossa marca">
+            <h1>{Reprograma}</h1>
+            <ul>
+                <li><a href="index.html" target="_self">Orçamento</a></li> <!-- Para abrirem outra aba, "_blank"-->
+                <li><a href="conteudo.html" target="_self">Conteúdo</a></li>
+            </ul>
+        </nav>
+        </header> <!-- Estruturar em header melhora o rankeamento da página nas buscas, pois mostra melhor organização-->
+
+    <h2>Peça seu orçamento!</h2>
+    <form action="/#">
+        <div>
+            <label for="nome">Nome</label>
+                <input value="valor no input" id="nome" name="nome" type="text">
+                <!-- Label serve para que o usuário não tenha que clicar apenas no botão (input) 
+                e possa clicar no texto todo (label) para que a ação seja igualmente válida. 
+                Para isso, "for" na label e "id" no input devem ter o mesmo nome (serão atribuídos ao mesmo campo)-->
+                <!--"value" define um valor pré-definido para o input; usuário pode alterar ou deixar com o valor dado-->
+                    <br>
+                    <br>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+                <input placeholder="Placeholder para o email" id="email" name="email" type="email" required>
+                <!-- Atributo "required" serve para habilitar que o preenchimento do campo é obrigatório-->
+                    <br>
+                    <br>
+        </div>
+
+        <div>
+            <label for="descricao">Descrição</label>
+                <textarea type="descricao" id="descricao" cols="50" rows="5" >Valor pré-definido na caixa de texto</textarea>
+                    <br>
+                    <br>
+        </div>
+        <div>
+            <label for="material">Material</label>
+                <select name="material" multiple id="material" required>
+                    <option value="emailMarketing">Email Marketing</option>
+                    <option value="landingPage">Landing Page</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <!-- Atributo "multiple id" é usado porque renderiza melhor no celular. 
+                Em desktop, deve-se manter o ctrl ou shift pressionado para selecionar mais de uma opção-->
+                    <br>
+                    <br>
+        </div>
+        <div>
+            <label>Você precisa de:</label>
+                <input type="checkbox" id="designer" name="profissionais"><label for="designer">Designer</label>
+                <input type="checkbox" id="desenvolvedor" name="profissionais"><label for="desenvolvedor">Desenvolvedor</label>
+                <input type="checkbox" id="geremte" name="profissionais"><label for="gerente">Gerente</label>
+                    <br>
+                    <br>
+        </div>
+        <div>
+            <label for="orcamento">Orçamento</label>
+                <select id="orcamento" required>
+                    <option value="1">Menos de R$100,00</option>
+                    <option value="2">R$100,00 - R$300,00</option>
+                    <option value="3">R$300,00 - R$500.00</option>
+                    <option value="4">Mais de R$500,00</option>
+                </select>
+                    <br>
+                    <br>
+        </div>
+        <div>
+            <label for="disponibilidade">Disponibilidade</label>
+                    <br>
+                <input type="radio" id="integral" name="disponibilidade"><label for="integral">Período Integral</label>
+                    <br>
+                <input type="radio" id="meioPeriodo" name="disponibilidade"><label for="meioPeriodo">Meio Período</label>
+                    <br>
+                <input type="radio" id="ocasional" name="disponibilidade"><label for="ocasional">Ocasional</label>
+                <!-- Neste caso, input vem antes do label porque o atributo de seleção deve anteceder o texto-->
+                <!-- Quando o type é "radio", todas as opções devem estar atribuídas ao mesmo "name", porque apenas uma será escolhida-->
+                    <br>
+                    <br>
+        </div>
+        <div>
+             <label for="prazo">Prazo</label>               <input type="date" id="prazo" name="prazo">
+                <!--Funciona apenas no Chrome! Necessário tratar a data no Javascript-->
+                    <br>
+                    <br>
+        </div>
+        <div>
+            <label for="file">Arquivo complementar:</label>
+                    <br>
+                <input type="file" id="file" name="file" accept="image/*">
+                    <br>
+                    <br>
+            <input type="submit" value="Enviar">
+            <!-- Também possível: <button type="submit">Enviar</button> - melhor semanticamente, pois é "um botão com a função de um botão, e não um input-->
+        </div>
+    </form>
+    <footer>
+        <p>Made with <3 by <a href="mailto:arianecamilo.alves@gmail.com" target="_blank">Ariane Alves</a> - 2017</p>
+        <!-- "mailto" redireciona para o e-mail -->
+    </footer>
+    </body>
+
+</html>

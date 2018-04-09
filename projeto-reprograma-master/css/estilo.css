@@ -1,0 +1,121 @@
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+
+body{
+    margin: 0;
+    padding: 0;    
+}
+
+
+.header{
+    background-color: #722834;
+    text-align: center;    
+    padding: 15px;    
+    font-family: 'Roboto Slab', serif;
+}
+
+.header h2{
+    margin: 20px;
+    font-family: 'Asap Condensed', sans-serif;
+    color: #FFE1A8;
+}
+
+.header h1{
+    margin-bottom: 0;
+    color: #FFE1A8;
+}
+
+.imagem-perfil{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.navegacao-list-item{
+    display: inline;
+    margin: 0 30px 0 30px; /*1 valor-margem igual; 2 valores-eixo x e eixo y; 4 valores-sentido horário */
+    font-family: 'Asap Condensed', sans-serif; 
+}
+
+a{
+    text-decoration: none;
+    color: #D3D3BA;   
+}
+
+a:hover{
+    color: #E63946;
+}
+
+.navegacao{
+    margin-top: 50px;
+}
+
+main{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section{
+    display: flex;   
+    font-family: 'Lora';
+    border-bottom: 0.8px solid;
+    padding: 8px;    
+}
+ 
+section:last-child{
+    border-bottom: none;
+}
+
+h3{
+    width: 20%;
+    min-width: 220px;
+    font-family: 'Abel', sans-serif;   
+}
+
+h4{
+    font-family: 'Lora';
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+
+
+a.contato{
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+}
+
+section h3{   
+    text-align: left;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+}
+
+h5{
+    margin-top: 0;
+}
+
+p{
+    margin-bottom: 0;   
+}
+
+footer{
+    background-color: #D3D3BA;
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+   
+    display: fixed;
+    font-family: 'Asap Condensed', sans-serif;      
+}
+
+
+

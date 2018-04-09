@@ -1,0 +1,84 @@
+*{
+    font-family:  Helvetica, Arial, sans-serif
+}
+
+body{
+    margin: 0;
+    margin-bottom: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: url(../img/mulher.png) no-repeat center bottom,
+                url(../img/banner-bg.jpg);
+    background-size: auto 400px, auto 500px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header h1{
+    background: white;
+    padding: 10px;
+    color: #333;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.overflow{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /*overflow: auto;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.opacidade{
+    /*background-color: #e74c3c;
+    opacity: 0.8;*/
+    background-color: rgba(28, 185, 36, 0.6);
+}
+
+.botao-cta{
+    background-color: #3498db;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    display: block;
+}
+
+.botao-cta:hover{
+    background-color: #1abc9c;
+    padding: 20px 50px;
+    transition: 1s padding, 4s background-color;
+}
+
+.botao-cta:active {
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5) inset;
+}
+
+.caixa-preta{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    animation: mexer-caixa 5s ease-in infinite;
+}
+
+@keyframes mexer-caixa{
+    /*from {left: 0;
+    background-color: #8e44ad}
+    to {left: 400px;
+    background-color: #d35400}       */
+    0% {left: 0;}      /*ponto inicial*/
+    50% {left: 400px;} /*ponto intermediário*/
+    100% {left: 0;}    /*ponto final*/
+}

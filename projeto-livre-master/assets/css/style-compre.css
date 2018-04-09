@@ -1,0 +1,116 @@
+/*GERAL*/
+
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*TEXTO*/
+h1, h2, h3, h4, p, a{
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 100px;
+    color: #E84855;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: #E84855;
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #2D3047;
+}
+
+h4{
+
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;    
+    color: #2D3047;
+}
+
+/*NAVBAR*/
+nav{
+    position: fixed;
+    background-color: #FF9B71;   
+    width: 100%;
+    height: 100px;
+    top: 0;
+    right: 0;   
+    z-index: 10;
+}
+
+.nav-logo{    
+    float: left;
+}
+
+.navbar-logo img{
+    width: 100%;
+}
+
+ul{
+    text-align: right;
+}
+
+ul li{
+    list-style: none;
+    float: left;
+}
+
+ul li a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;  
+    color: #E84855;
+    padding: 0 15px;
+}
+
+ul li a:hover{    
+    font-weight: 300;
+}
+
+
+/*MAIN SECTION*/
+main{
+   max-height: 500px;
+   back
+   
+}
+
+.titulo .main-img{
+    width: 50%;
+}
+
+
+/*HOME-SECTION*/
+.home-section{
+    background-color: #FFEDA1;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: #FFB697;
+}
+      

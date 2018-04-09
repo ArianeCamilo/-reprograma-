@@ -1,0 +1,6 @@
+.azul{
+    background-color: blue;    
+}
+.amarelo{
+    background-color: yellow;
+} /* div tem duas classes; continua sendo section, mas aceita atributos individuais para a segunda class*/

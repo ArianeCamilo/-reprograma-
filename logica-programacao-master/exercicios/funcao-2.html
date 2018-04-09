@@ -1,0 +1,42 @@
+<h1>Calculadora de média</h1>
+<form onsubmit="return responder()">
+    <label>Nota 1: </label>
+    <input id="nota1" type="text">
+    <br>
+    <label>Nota 2: </label>
+    <input id="nota2" type="text">
+    <br>
+    <button type="submit"> Responder </button>
+</form>
+<p id="mensagem">HELP</p>
+<script>
+    function responder(){
+        var num1 = document.getElementById("nota1").value;
+        var num2 = document.getElementById("nota2").value;
+        var paragrafoMensagem = document.getElementById("mensagem");
+        if (num1 == "" || num2 == ""){
+            paragrafoMensagem.textContent = "Informe sua nota!";
+            return false;
+        }
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+        if (isNaN(num1) || isNaN(num2)) {
+            paragrafoMensagem.textContent = "Informe números!"
+            return false;
+        }
+        if (num1 < 0 || num2 < 0){
+            paragrafoMensagem.textContent = "Informe números positivos!"
+            return false;
+        } 
+        
+        var media = calculaMedia(num1, num2);
+        paragrafoMensagem.textContent = media;
+        return false;
+
+        }
+    function calculaMedia(num1, num2){
+        media = (num1 + num2)/2;
+        return media;
+    }
+</script>
+

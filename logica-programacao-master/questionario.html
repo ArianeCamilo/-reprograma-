@@ -1,0 +1,66 @@
+<!-- HTML -->
+<h1>Qual o seu nome?</h1>
+<form onsubmit="return validaNome()">
+    <label>Meu nome é: </label>
+    <input id="nome" type="text">
+    <button type="submit">Responder</button>
+</form>
+<p id="mensagem">Olá</p>
+
+<form onsubmit="return validaEmail()">
+    <label>Meu nome é: </label>
+    <input id="email" type="email">
+    <button type="submit">Responder email</button>
+</form>
+<p id="preenchaemail">Seu email</p>
+
+<!-- JAVASCRIPT -->
+<script>
+    function validaNome() { //entre parênteses, insere-se o evento atribuído ao formulário
+
+        //entrada
+        var inputNome = document.getElementById("nome");
+        var nome = inputNome.value; //variável nome é igual o valor que foi digitado no input (ver no console.dir(document))
+
+        // //processamento
+        // if (nome == "") {
+        //     //saída: alerta preencha
+        //     alert("Por favor, preencha o nome");
+        // } else {
+        //     //saída: alerta com boas-vindas
+        //     alert("Seja bem-vinda(o), " + nome);
+        // }
+
+
+        //2º EXERCÍCIO
+        var paragrafoMensagem = document.getElementById("mensagem"); //entrada
+
+        if (nome == "") {
+            paragrafoMensagem.textContent = "Por favor, preencha o nome";
+        } else {
+            paragrafoMensagem.textContent = "Seja bem-vinda(o), " + nome;
+        };
+
+    return false; //para não limpar os dados ao recarregar
+    }
+
+function validaEmail{
+    var inputEmail = document.getElementById("email");
+    var email = inputEmail.value;
+    var preenchaEmail = document.getElementById("preenchaemail");
+
+
+        if (email == ""){
+            preenchaEmail.textContent = "Por favor, preencha seu email";
+        }else{
+            preenchaemail.textContent = "Seu email é " + email;
+        }
+
+        return false;
+}
+
+
+
+
+
+</script>

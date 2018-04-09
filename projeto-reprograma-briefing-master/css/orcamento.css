@@ -1,0 +1,69 @@
+body{
+    font-family: 'Francois One', sans-serif;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px 50px 50px 50px;
+}
+
+header{
+     background-color:#F95738;
+     background-repeat: repeat-y;
+     background-attachment: fixed; /*imagem do bg fixada, independente do scroll*/
+     /*background-size: contain;*/
+     height: 300px;     
+ }
+
+ header h1{
+     padding-top: 15px;
+ }
+
+/*AULA 2*/
+
+div{ /*chamando tag*/
+    color: #585993;
+}
+
+.box{ /*chamando class*/
+    background-color: #556321;
+}
+
+ h2{
+     text-decoration: underline;
+ }
+
+ label.box{ /*chamando tag.class*/
+     border: black 1px solid;
+ }
+  
+  .imgTeste img{
+    max-width: 100px;
+    border-radius: 10%;
+  }
+
+a{
+    background-color: #589647;
+    width:50px; /* não funciona porque atributos que são por padrão display inline não aceitam valores de altura e largura, - mudar com o padding*/
+    padding: 10px;
+    display: inline-block;
+}
+ 
+ p{
+     background-color: #F95738;
+     height: 30px;
+ }
+
+ label{
+     width: 130px;
+     height: 50px;
+     display: inline-block; /*todas as labels passam a ter um limite de largura a partir do qual o conteúdo input aparece ao lado (inline)*/
+     font-family: 'Rubik', sans-serif, pink; /*Não está dando certo! Não fica negrito ou com outra cor*/
+     background-color: #F95738;
+ }
+
+ input.checkbox{
+     background-color: #585993;
+ }
+
+
+

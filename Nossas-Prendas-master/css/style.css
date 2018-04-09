@@ -1,0 +1,479 @@
+/*GERAL - formatação válida para todo o documento*/
+body{
+    margin: 0 auto;
+    padding: 0; 
+}
+
+.container{
+    margin: 0 auto;
+    width: 75%;
+}
+
+section{
+    padding: 15vh 0;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.produtos-box > img, .quem-faz-content > img{
+    cursor: pointer;
+}
+
+/* TEXTO - formatação geral das tags e classes de texto*/
+h1, h2, h3, h4, p, a{
+    margin: 0 auto;
+}
+
+h1{
+    font-family: "Playfair Display";
+    font-size: 100px;    
+    padding-top: 40vh;
+    margin-bottom: 15px; 
+    color: #a8b541;
+}
+
+h2{
+    font-family: Dosis;
+    font-weight: 400;
+    font-size: 40px;    
+    color: white;
+}
+
+h3{    
+    font-family: "Playfair Display";
+    font-size: 60px; 
+    margin-bottom: 20px; 
+    color: #a8b541;
+}
+
+h2 > .header-texto{
+    padding-bottom: 10px;    
+}
+
+h4{
+    font-family: "Playfair Display";
+    font-size: 40px; 
+    margin: 20px 0; 
+    color: #a8b541;
+}
+
+p{
+    font-family: Dosis;
+    font-size: 25px;
+    padding-bottom: 2vh;
+    padding-right: 10vh;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.texto{
+    text-align: center; 
+}
+
+.header-texto{   
+    background-color: rgba(156, 103, 121, 0.8);
+    padding: 0 10px;
+    border-radius: 15px;   
+}
+
+
+/*HEADER*/
+header{
+    text-align: center;
+}
+                    
+.background-header{
+    background-image: url(../img/bg-main.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+/*HEADER - navbar*/
+nav{
+    position: fixed;
+    background-color: rgb(156, 103, 121);
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.nav-logo{    
+    float: left;
+}
+
+.navbar-logo img{
+    width: 100%;
+}
+
+.nav-menu{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    text-align: right;   
+}
+
+ul > li{
+    list-style: none;
+    float: left;
+}
+
+ul > li > a{
+    font-family: "Roboto Condensed", sans-serif;  
+    font-size: 20px;   
+    padding: 0 15px;
+    color: white;
+    transition: all 0.5s ease;    
+}
+
+ul > li > a:hover{    
+    color: #f6c9ab;
+
+}
+
+/*SECTION - QUEM SOMOS*/
+.section-quem-somos{
+    padding: 15vh 0; 
+}
+
+.section-quem-somos > .container{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+/*SECTION - PRODUTOS/ENCONTROS*/
+.section-produtos-encontros > .container{
+    display: flex;   
+    justify-content: space-around;  
+}
+
+.section-produtos-encontros{
+    background-color: #a8b541;
+}
+
+.nossos-produtos-text > h3, .encontros-text > h3{
+    color: white;
+}
+
+.produtos-box{
+    display: flex;
+    flex-flow: row wrap; 
+    background-color: #eee; 
+    justify-content: space-around; 
+    width: 500px; 
+    margin-right: 10vh; 
+    position: relative;     
+}
+
+.produtos-box img{
+    padding: 5% 1%;
+}
+
+.encontros-list{
+    align-items: center;
+}
+
+.encontros-list > ul{
+    padding-left: 0; 
+    text-align: center;
+    display: grid;
+}
+
+.encontros-list > ul > li{
+    padding-bottom: 20px;    
+}
+
+.encontros-list > ul > li > .encontros-list-title{
+    font-size: 30px;
+    text-align: left;
+    color: white;
+}
+
+.encontros-list > ul > li > .encontros-list-text{
+    font-size: 20px;
+    text-align: left;
+}
+
+.produtos-encontros-container{
+    text-align: center;
+    width: 500px;
+    margin-right: 10vh;
+}
+
+.produtos-box > img{
+    text-align: center;
+    opacity: 0.6;
+}
+
+.produtos-box > img:hover{
+     opacity: 1;
+}
+
+#produtos-encontros-btn{
+    border-radius: 50px;
+    border-style: none;
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    opacity: 0.8;
+}
+
+#produtos-encontros-btn:hover{
+    opacity: 1;
+}
+
+#produtos-encontros-btn:focus{
+    outline: none; 
+}
+
+/*SECTION - QUEM FAZ*/
+.section-quem-faz{
+    padding: 15vh 0 10vh 0;
+}
+
+.quem-faz-box{
+    display: flex;
+    justify-content: space-around;
+    padding: 5vh 1vh;
+    background-color: #eee;
+    margin-top: 10px;
+}
+
+.quem-faz-content > img{
+    text-align: center;
+    opacity: 0.6;
+}
+
+.quem-faz-content > img:hover{
+     opacity: 1;
+}
+
+.quem-faz-content > p{
+    font-size: 20px;
+    padding: 0;    
+    text-align: center;
+}
+
+.quem-faz-btn-container{
+    text-align: center;
+}
+
+#quem-faz-btn{
+    border-radius: 50px;
+    border-style: none;
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    background-color: #a8b541;
+    padding: 20px;
+    margin-top: 50px;
+    opacity: 0.8;
+}
+
+#quem-faz-btn:hover{
+    opacity: 1;
+}
+
+#quem-faz-btn:focus{
+    outline: none; 
+}
+
+/*SECTION - CADASTRO*/
+.section-cadastro{
+    background-color: #a8b541;
+}
+
+.section-cadastro h3{
+    color: white;
+}
+
+/*Botões Ensinar/Apoiar*/
+.cadastro-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ensinar-btn, #apoiar-btn{
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border-style: none;
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    background-color: white;
+    padding: 20px;
+}
+
+/*Ensinar/Apoiar - Conteúdos dos formulários*/
+#ensinar-form, #apoiar-form{
+    display: none;
+    text-align: left;
+}
+
+.cadastro-form-container{
+    text-align: center;
+}
+
+form{
+    display: inline-block;
+    margin-top: 20px;
+    min-width: 85%;
+    background-color: #9C6779;
+    border-radius: 25px;
+}
+
+.form-box{
+    padding: 20px;
+}
+
+label{
+    font-family: "Roboto Condensed", sans-serif;
+    padding-right: 5px;
+    font-size: 25px;  
+    color: white;  
+}
+
+input{
+    border-style: none;
+    background-color: white;
+    border-radius: 50px;    
+    padding: 15px;
+    min-width: 45%;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid white;
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+.form-box > .habilidade{
+    max-width: 50%;
+}
+
+::placeholder{
+    font-style: italic;
+    font-family: "Roboto Condensed";
+}
+
+/*Ensinar/Apoiar - Botões dos formulários*/
+#ensinar-submit, #apoiar-submit{
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border-style: none;
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    background-color: white;
+    padding: 20px 40px;
+}
+
+.ensinar-sbmt-container, .apoiar-sbmt-container{
+    width: 100%;
+    text-align: center;
+}
+
+#ensinar-btn, #apoiar-btn, #ensinar-submit, #apoiar-submit{
+    outline: none;
+}
+
+/*FOOTER*/
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.footer-contato{    
+    text-align: center;
+}
+
+.footer-contato > p{    
+    font-family: "Roboto Condensed";
+   
+}
+
+.footer-contato > a{    
+   color: #9C6779;
+}
+
+.footer-redes{ 
+    justify-content: space-around;       
+}
+
+.footer-redes > img{
+    padding: 0 10px ;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 324px){
+/*header*/
+    nav{
+        position: absolute;
+    }
+
+    ul > li{
+        padding: 5px 0;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .header-texto{
+        border-radius: 0px;
+    }
+
+    .section-quem-somos > .container, .section-produtos-encontros > .container, .section-quem-faz > .container, .section-cadastro > .container, footer > .container{
+        display: block;
+    }
+
+    section, .section-quem-somos, .section-quem-faz{
+        padding: 5vh 0;
+    }
+    
+     h3{
+        font-size: 40px
+    }
+
+   p{
+        font-size: 15px
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    .footer-contato > p, .footer-contato > a > p{
+        padding-right: 0;
+    }
+
+    .produtos-box, .produtos-encontros-container, .quem-faz-box{
+        flex-direction: column;
+        width: 150px;
+    }
+}
+
+
+
+

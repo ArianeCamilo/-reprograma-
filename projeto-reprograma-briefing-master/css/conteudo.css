@@ -1,0 +1,139 @@
+table{
+    /*background-color: #FCAA67;*/
+    padding: 20px 50px;
+}
+
+/*Define parâmetros de estilo para todo o documento; mesmo assim, "id" é mais forte*/
+body{
+    font-family: 'Oswald', sans-serif; Verdana;
+    padding: 0 100px 100px 100px;
+}
+
+/*Título da página (estilo h1)*/ /*Conteúdo para estudo*/
+#titulo{
+    color: #D36767;
+    font-weight: bold;
+    text-align: center;    
+    /*font-size: 40px;
+    font-family: 'Gill Sans', 'Trebuchet MS', Geneva;*/
+}
+
+/*Header*/
+ header{
+     background-image: url('../img/pattern.jpg');
+     background-color:#F3B3A6;
+     background-repeat: repeat-y;
+     background-attachment: fixed; /*imagem do bg fixada, independente do scroll*/
+     /*background-size: contain;*/
+     height: 300px;
+ }
+
+ header h1{
+     padding-top: 15px;
+ }
+
+ h2{
+     padding: 40px 40px 40px 40px;
+ }
+    
+
+ img.center{
+     display: block; /*pega 100% do tamanho onde está inserido - cria um bloco*/
+     margin: 0 auto;
+ }
+
+ nav{
+     padding: 5px 0; /*queremos apenas o padding vertical - precisa estar definido, 
+     ainda que seja 0, pois é a estrutura de usar apenas "padding", sem left ou right*/
+     background-color: #F3B3A6;
+     color: #FCAA67;
+ }
+
+/*Mudando a cor dos itens do menu */
+nav ul li a{
+    color: #62929E;
+    text-decoration: none; /*Tira o sublinhado padrão de hiperlinks*/
+}
+
+/*Mudar a cor quando passar o mouse por cima*/
+nav ul li a:hover{
+    color: #BD9391;
+}
+
+/*Coloca o menu de navegação (nav) na horizontal */
+nav ul li{
+    display: inline;
+    padding-right: 20px;
+}   
+
+/*Referência uma class (no HTML: <th class="linhaAzul"*/
+.linhaAzul {
+    color:#176087;
+}
+
+tabel, th, td{
+    background-color: #6EB4D1;
+    border: 1px dashed #6CBEED;
+}
+
+/*Resumo*/
+ section/*.resumo*/{
+     background-color: #8AA29E;
+     color: #FAFAFA;
+     padding: 100px 100px 90px 50px;
+     min-height: 100px;
+     min-width: 300px;
+      /*padding-top: 100px;
+     padding-left: 50px;
+     padding-bottom: 90px; <-- outra maneira de fazer */
+     /*border-style: dotted;
+     border-width: 5px 10px 15px 3px;
+     border-color: #297045;
+     border-radius: 50px; *//*borda arredondada; para fazer círculo, "50%"*/
+     /*Ou: border: 5px dashed yellow - ordem: tamanho > estilo > cor*/
+     /*box-sizing: border-box; *//* é mais respeitado que as outras propriedades; faz com que tudo caiba dentro da caixa; não passa da altura x largura;  */    
+     /* 'em' é unidade de medida proporcional ao tamanho de outros elementos, como a fonte*/
+ }
+
+section h3{
+    text-align: center;
+}
+
+/*Imagem do caderno; img dentro da section de Resumo*/
+ section img{
+     max-width: 200px;
+     border-radius: 50%;
+ }
+
+/*Suporte*/
+ /*#suporte{
+     background-color: #DB5461;
+     color: #FFFFFF;
+     padding: 10px 50px 10px 50px;     
+     border-style: dotted;
+     border-width: 7px;
+     border-color: #FAFAFA;
+     border-radius: 20px;
+     box-sizing: border-box;        
+ }*/
+
+
+ footer{
+     text-align: center;
+     background-color: #6B6570;
+     padding: 10px;     
+ }
+
+ footer a{
+     color: #A8BA9A;
+     text-decoration: none;
+ }
+
+ footer a:hover{
+    color: #4A314D;
+ }
+
+ .heart{
+     color: #1A8BA9;
+     font-weight: bold;
+ }

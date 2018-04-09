@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reprograma</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default" style="background-color: #462755">
+            <div class="container">
+                <div class="navbar-header">
+                    <img class="navbar-brand" src="assets/img/logo-reprograma-header.png">
+                    <button class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#menu-reprograma"></button>
+                </div>
+
+                <ul id="menu-reprograma" class="nav navbar-nav navbar-right collapse navbar-collapse" style="color: white;">
+                    <li><a href="index.html">Reprograma</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- NOSSA MISSÃO -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Nossa Missão</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores rerum molestias est iste dolorem vero
+                        eveniet tempora voluptates dolorum quos velit, repellendus, blanditiis voluptas pariatur! Laudantium,
+                        veniam omnis. Nesciunt, expedita!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSSOS PROJETOS -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Nossos Projetos</h2>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <figure class="figure">
+                        <img src="http://via.placeholder.com/350x300" class="figure-img img-thumbnail">
+                        <figcaption class="figure-caption text-center">Devolução de Primeiro Projeto ou Título</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <figure class="figure">
+                        <img src="http://via.placeholder.com/350x300" class="figure-img img-thumbnail">
+                        <figcaption class="figure-caption text-center">Devolução de Primeiro Projeto ou Título</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <figure class="figure">
+                        <img src="http://via.placeholder.com/350x300" class="figure-img img-thumbnail">
+                        <figcaption class="figure-caption text-center">Devolução de Primeiro Projeto ou Título</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSSAS FOTOS -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Nossas Fotos</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="carousel-inner" src="http://via.placeholder.com/1800x600">
+                </div>
+
+                <div class="item">
+                    <img class="carousel-inner" src="http://via.placeholder.com/1800x600">
+                </div>
+
+                <div class="item">
+                    <img class="carousel-inner" src="http://via.placeholder.com/1800x600">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contato</h2>
+                    <p>Entre em contato conosco</p>
+
+
+                    <form>
+                        <div class="form-group">
+                            <label for="Nome1">Nome:</label>
+                            <input type="nome" class="form-control" id="Nome1" placeholder="Seu nome">
+                        </div>
+                        <div class="input-group">
+                            <label for="Email1">E-mail:</label>
+                            <span class="input-group-addon" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" aria-describedby="basic-addon1" id="Email1" placeholder="Seu e-mail">
+                        </div>
+
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                Dúvida
+                             </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Sugestão
+                            </label>
+                        </div>
+                        
+                        <select class="form-control">
+                        <option>Tipo de solicitação</option>
+                        <option>Solicitar um projeto</option>                       
+                        <option>Oferecer um serviço</option>                       
+                        </select>
+
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                    </form>                  
+                </div>
+
+                 <div class="col-md-6">
+                    <h2>Ícones</h2>
+                    <p>Exemplos</p>
+                    <span class="glyphicon glyphicon-fire"></span>
+                    <button><span class="glyphicon glyphicon-tint"></span></button>
+                    <button><span class="glyphicon glyphicon-globe"> Globe</span></button>
+                    </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-title">Reprograma</p>
+        <p>Alameda Barão de Limeira, 579 - Santa Cecília</p>
+        <p>São Paulo - SP 01202-001</p>
+        <p>Tel: (11) 3273-6000</p>
+        <p class="footer-email">E-mail: info@reprograma.com.br</p>
+    </footer>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/navbar-animation-fix.js"></script>
+</body>
+
+</html>

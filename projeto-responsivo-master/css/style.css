@@ -1,0 +1,144 @@
+/* Geral */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#D3CCBC, #F3F1EC);
+    margin: 0;
+    padding: 0;
+    position: relative; /* Centraliza o conteúdo do body! */
+    text-align: center; /* Centraliza o conteúdo do body! (os dois juntos) */
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    border-bottom: 1px solid black; 
+    padding: 40px 400px;
+}
+
+
+/*.container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+section{
+    padding: 30px 0;
+}*/
+
+/*Header*/
+.subtitulo{
+    font-size: 30px;
+}
+
+.titulo{
+    font-size: 50px;
+}
+
+.subtitulo, .titulo, .explicacao, .cta-download{
+    color: #EB6851;
+}
+
+
+/*Seção Principal*/
+.div-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+}
+
+.smartphone{    
+    max-width: 300px;   
+}
+
+.cadastro{
+    font-weight: lighter;
+    font-size: 30px;
+    color: #2D232E;
+    margin-bottom: 0;
+}
+
+.principal-conteudo{
+    margin-left: 30px;
+    padding-right: 300px;
+}
+
+input[type="email"]{
+    width: 250px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.convite{
+    text-decoration: none;
+    color: #EFC69B;
+    background-color: #1E6B52;
+    width: 250px;
+    padding: 10px 20px;
+    margin-top: 40px;    
+    border-radius: 7px;
+    transition: all 0.5s;
+    display: block;
+}
+
+.convite:hover{
+    background-color: #EB6851;
+}
+
+input[type="email"]{
+    margin-top: 20px;
+}
+
+/*Seção Conteúdo*/
+.conteudo-logo{
+    width: 500px;
+}
+
+.explicacao, .cta-download{
+    font-size: 30px;    
+}
+
+.explicacao-conteudo{
+    font-size: 15px;
+    padding: 0 150px;
+    color: #2D232E;
+}
+
+ul{
+    padding-top: 20px;
+    list-style: none;
+    color: #2D232E;
+    display: flex;    
+}
+
+.item{
+    font-size: 20px;
+    color: #AF1B3F;
+}
+
+/*Seção Download*/
+.download img{
+    padding: 40px 20px;
+    width: 250px;
+}
+
+
+/*Footer*/
+.divrodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 400px;
+}
+
+.divrodape img{
+    width: 30%;
+    height: 20%;
+}
+.divrodape h5{
+    text-align: center;
+    color: #2D232E;
+    margin: 0;
+}
+

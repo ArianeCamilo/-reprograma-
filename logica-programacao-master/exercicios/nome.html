@@ -1,0 +1,30 @@
+<h1> Nome </h1>
+
+<form onsubmit="return verificaNome()">
+    <label> Digite seu nome: </label>
+    <input id="informaNome" type="text"/>
+    <button type="submit"> Enviar </button>
+</form>
+
+<p id="mensagem">hhvblsh</p>
+
+<script>
+    function verificaNome(){
+    
+    var nome = document.getElementById("informaNome").value;
+    var paragrafoMensagem = document.getElementById("mensagem");
+    
+    if (nome == "") {        
+        paragrafoMensagem.textContent = "Você não preencheu o seu nome!";
+        return false;
+    } 
+
+    if (!isNaN(nome)) {  
+        paragrafoMensagem.textContent = "Preencha apenas com letras!";
+        return false;
+    }
+        paragrafoMensagem.textContent = "Olá, " + nome + " . Seja bem-vinda(o).";
+        return false;
+    }
+
+</script>

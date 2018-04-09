@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background: url('bg.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #7f469a;
+  box-shadow: 0px -1px 8px 0px #444;
+}
+
+nav > button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  color: #7f479a;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 1px 1px 5px 0px #444;
+  transition: background .3s cubic-bezier(0.19, 1, 0.22, 1), color .5s ease-out;
+}
+
+nav > button:hover {
+  cursor: pointer;
+  background: #7f479a;
+  color: #fff;
+}
+
+main {
+  flex: 1 1 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+#modal{
+  padding: 20px;  
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;    
+  text-align: center;
+  /*display: none;*/
+  position: relative;
+  top: 50%;
+  left: 50%; /* position, top e left usados para alinha box no centro quando está sobre o fundo preto com opacidade */
+  transform: translate3d(-50%, -50%, 0); /* para centralizar elemento a partir de seu centro, e não da extremidade superior esquerda*/ /*buscar por "centralizar elemento absoluto"*/
+}
+
+#modal.visivel{
+  display: block;
+}
+
+#fundo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: none; 
+}
+
+#fundo.visivel{
+  display: block;
+
+}
+
+#modal > img{
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+#close-cross{ 
+  position: absolute;
+  border: none;
+  background: transparent;
+}
+
+#close-cross:hover{
+  cursor: pointer;
+} /*faz o cursor virar uma mão quando se coloca o mouse sobre o "X"*/
+
+
+#close-cross > img{
+  max-width: 20px;  
+}
+
+#close-cross.visivel{
+  display: block;  
+}
+
+.email{
+  width: 200px;
+  height: 30px;
+  border-color: #7f469a;  
+  border-style: solid;
+  border-radius: 16px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.senha{
+  width: 200px;
+  height: 30px;
+  border-color: #7f469a;  
+  border-style: solid;
+  border-radius: 16px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.logar{   
+  width: 80px;
+  height: 30px;
+  background-color: #7f469a;
+  color: white;  
+  border-style: solid;
+  border-radius: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: right;
+}
